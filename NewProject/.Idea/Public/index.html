@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoTravel</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+<div class="wrapper">
+    <div id="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar-logo"><a href="#">GoTravel</a></div>
+                <div class="navbar-right">
+                    <ul class="navbar-links">
+                        <li class="link"><a href="#">Trang chủ</a></li>
+                        <li class="link"><a href="#">Khuyến mãi</a></li>
+                        <li class="link"><a href="#">Hỗ trợ</a></li>
+                        <li class="link"><a href="#">Đặt chỗ của tôi</a></li>
+                    </ul>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-login">Đăng nhập</button>
+                        <button type="button" class="btn btn-register">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="hero-section" class="bg-image">
+        <div class="container">
+            <h2 class="hero-title">Những chuyến đi để khám phá thế giới</h2>
+            <p class="hero-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusamus cum eaque eius facilis harum ipsum natus optio quae sunt vero.
+            </p>
+            <div class="btn-group">
+                <button class="btn btn-more">TÌM HIỂU THÊM</button>
+                <button class="btn btn-booking">ĐẶT NGAY</button>
+            </div>
+
+        </div>
+    </div>
+    <div id="search-header">
+        <div class="container">
+            <p class="search-subtitle">Khám phá ngay</p>
+            <h2 class="search-title">Xin mời Quý khách chọn thông tin cần tìm kiếm.</h2>
+            <p class="search-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestias!</p>
+            <div class="search-tabs">
+                <div class="tab active">
+                    <i class="fas fa-search"></i>
+                    <span>Du lịch <strong>TRONG NƯỚC</strong></span>
+                </div>
+                <div class="tab">
+                    <i class="fas fa-search"></i>
+                    <span>Du lịch <strong>NƯỚC NGOÀI</strong></span>
+                </div>
+                <div class="tab">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <span>TÌM <STRONG>VÉ MÁY BAY</STRONG></span>
+                </div>
+                <div class="tab">
+                    <i class="fa-solid fa-bus"></i>
+                    <span>TÌM <STRONG>VÉ XE KHÁCH</STRONG></span>
+                </div>
+                <div class="tab">
+                    <i class="fa-solid fa-hotel"></i>
+                    <span>ĐẶT <STRONG>KHÁCH SẠN</STRONG></span>
+                </div>
+            </div>
+            <div class="search-panel">
+                <div class="search-form">
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option value="">Nơi khởi hành</option>
+                            <option>Hà Nội</option>
+                            <option>TP. Hồ Chí Minh</option>
+                            <option>Đà Nẵng</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option value="">Điểm đến</option>
+                            <option>Hạ Long</option>
+                            <option>Sapa</option>
+                            <option>Phú Quốc</option>
+                            <option>Đà Lạt</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" class="form-control" placeholder="Ngày khởi hành">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option value="">Chọn giá tour</option>
+                            <option>Dưới 2 triệu</option>
+                            <option>2 - 4 triệu</option>
+                            <option>4 - 6 triệu</option>
+                            <option>6 - 10 triệu</option>
+                            <option>Trên 10 triệu</option>
+                        </select>
+                    </div>
+                    <button class="search-button">
+                        <i class="fas fa-search"></i>
+                        <span>TÌM KIẾM</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="container">
+            <div class="content-header">
+                <i class="fa-solid fa-plane-departure"
+                   style="font-size: 2rem; margin-top: 40px; color: var(--deep-blue-color)"></i>
+                <h2 class="content-title">Khám phá những địa điểm nổi tiếng</h2>
+            </div>
+            <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla,
+                reprehenderit!</p>
+            <div class="location-container">
+                <ul class="location-list">
+                    <li>
+                        <button class="location-btn">Việt Nam</button>
+                    </li>
+                    <li>
+                        <button class="location-btn">Thái Lan</button>
+                    </li>
+                    <li>
+                        <button class="location-btn">Trung Quốc</button>
+                    </li>
+                    <li>
+                        <button class="location-btn">Singapore</button>
+                    </li>
+                    <li>
+                        <button class="location-btn">Hàn Quốc</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-container">
+                <div class="card-list">
+                    <div class="card popular-card">
+                        <div class="card-img">
+                            <!--                            <img src="../src/assets/images" alt="">-->
+                            <img src="https://picsum.photos/200/300" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title"><a href="#">Hà Nội</a></h3>
+                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Dolores, exercitationem?</p>
+                        </div>
+                    </div>
+                    <div class="card popular-card">
+                        <div class="card-img">
+                            <!--                            <img src="../src/assets/images" alt="">-->
+                            <img src="https://picsum.photos/200/300" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title"><a href="#">TP. Hồ Chí Minh</a></h3>
+                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Dolores, exercitationem?</p>
+                        </div>
+                    </div>
+                    <div class="card popular-card">
+                        <div class="card-img">
+                            <!--                            <img src="../src/assets/images" alt="">-->
+                            <img src="https://picsum.photos/200/300" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title"><a href="#">Đà Nẵng</a></h3>
+                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Dolores, exercitationem?</p>
+                        </div>
+                    </div>
+                    <div class="card popular-card">
+                        <div class="card-img">
+                            <!--                            <img src="../src/assets/images" alt="">-->
+                            <img src="https://picsum.photos/200/300" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title"><a href="#">Hội An</a></h3>
+                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Dolores, exercitationem?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-header">
+                <i class="fa-solid fa-location-dot"
+                   style="font-size: 2rem; margin-top: 40px; color: var(--deep-blue-color)"></i>
+                <h2 class="content-title">Các hoạt động du lịch</h2>
+            </div>
+            <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, odio.</p>
+            <div class="card-container">
+                <div class="card-list">
+                    <div class="card popular-card">
+                        <div class="card-img">
+                            <!--                            <img src="../src/assets/images" alt="">-->
+                            <img src="https://picsum.photos/200/300" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title"><a href="#">Hà Nội</a></h3>
+                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Dolores, exercitationem?</p>
+                        </div>
+                    </div>
+                    <div class="card popular-card">
+                        <div class="card-img">
+                            <!--                            <img src="../src/assets/images" alt="">-->
+                            <img src="https://picsum.photos/200/300" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title"><a href="#">TP. Hồ Chí Minh</a></h3>
+                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Dolores, exercitationem?</p>
+                        </div>
+                    </div>
+                    <div class="card popular-card">
+                        <div class="card-img">
+                            <!--                            <img src="../src/assets/images" alt="">-->
+                            <img src="https://picsum.photos/200/300" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title"><a href="#">Đà Nẵng</a></h3>
+                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Dolores, exercitationem?</p>
+                        </div>
+                    </div>
+                    <div class="card popular-card">
+                        <div class="card-img">
+                            <!--                            <img src="../src/assets/images" alt="">-->
+                            <img src="https://picsum.photos/200/300" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title"><a href="#">Hội An</a></h3>
+                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Dolores, exercitationem?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="reason-booking">
+        <div class="container">
+            <h2 class="reason-title">Lý do nên đặt chỗ với GoTravel</h2>
+            <div class="reason-container">
+                <div class="reason-card">
+                    <div class="reason-image">
+                        <img src="" alt="">
+                    </div>
+                    <div class="reason-content">
+                        <h3 class="card-title">Đáp ứng mọi nhu cầu của bạn</h3>
+                        <p class="card-description">Từ chuyến bay, lưu trú, đến điểm tham quan, bạn có thể tìm chọn sản
+                            phẩm hoàn chỉnh và Hướng Dẫn Du Lịch của chúng tôi.</p>
+                    </div>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-image">
+                        <img src="" alt="">
+                    </div>
+                    <div class="reason-content">
+                        <h3 class="card-title">Đáp ứng mọi nhu cầu của bạn</h3>
+                        <p class="card-description">Từ chuyến bay, lưu trú, đến điểm tham quan, bạn có thể tìm chọn sản
+                            phẩm hoàn chỉnh và Hướng Dẫn Du Lịch của chúng tôi.</p>
+                    </div>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-image">
+                        <img src="" alt="">
+                    </div>
+                    <div class="reason-content">
+                        <h3 class="card-title">Đáp ứng mọi nhu cầu của bạn</h3>
+                        <p class="card-description">Từ chuyến bay, lưu trú, đến điểm tham quan, bạn có thể tìm chọn sản
+                            phẩm hoàn chỉnh và Hướng Dẫn Du Lịch của chúng tôi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gallery">
+        <div class="container">
+            <p class="gallery-subtitle">Thư viện ảnh</p>
+            <h2 class="gallery-title">Ảnh được chụp từ các du khách</h2>
+            <p class="gallery-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestias!</p>
+            <div class="gallery-image">
+                <div class="traveller-image">
+                    <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         alt="">
+                </div>
+                <div class="traveller-image">
+                    <img src="https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         alt="">
+                </div>
+                <div class="traveller-image">
+                    <img src="https://images.unsplash.com/photo-1707343848552-893e05dba6ac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         alt="">
+                </div>
+                <div class="traveller-image">
+                    <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         alt="">
+                </div>
+                <div class="traveller-image">
+                    <img src="https://images.unsplash.com/photo-1494783367193-149034c05e8f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         alt="">
+                </div>
+                <div class="traveller-image">
+                    <img src="https://images.unsplash.com/photo-1494783367193-149034c05e8f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         alt="">
+                </div>
+                <div class="traveller-image">
+                    <img src="https://images.unsplash.com/photo-1494783367193-149034c05e8f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         alt="">
+                </div>
+                <div class="traveller-image">
+                    <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         alt="">
+                </div>
+                <div class="traveller-image">
+                    <img src="https://images.unsplash.com/photo-1707343848552-893e05dba6ac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>GoTravel</h3>
+                    <p class="footer-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis,
+                        possimus.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-link">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">News & Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="#">Call Center</a></li>
+                            <li><a href="#">Support Center</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Services</a></li>
+                            <li><a href="#">Payments</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-credit">
+                <p class="credit">&#169; 2024 GoTravel.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

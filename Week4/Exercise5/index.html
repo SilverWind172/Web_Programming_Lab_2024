@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rotate Image</title>
+    <style>
+      #rotateImage {
+        width: 800px;
+        margin: auto;
+        display: block;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <img id="rotateImage" src="iceland_aurora_northern_lights_kirkjufell_mountain-1024x683.jpg" alt="Image to Rotate" />
+
+    <script>
+      let angle = 0;
+      setInterval(() => {
+        angle += 15;
+        $("#rotateImage").css("transform", `rotate(${angle}deg)`);
+      }, 2000);
+    </script>
+  </body>
+</html>

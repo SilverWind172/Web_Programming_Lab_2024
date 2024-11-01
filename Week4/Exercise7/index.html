@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Order Click</title>
+</head>
+<body>
+    <div id="buttons"></div>
+    <script>
+        let nextNumber = 1;
+
+        for (let i = 1; i <= 64; i++) {
+            let button = document.createElement("button");
+            button.innerText = i;
+            button.onclick = function() {
+                if (parseInt(button.innerText) === nextNumber) {
+                    button.remove();
+                    nextNumber++;
+                    
+                } else {
+                    alert("Wrong button!");
+                }
+            };
+            document.getElementById("buttons").appendChild(button);
+        }
+    </script>
+</body>
+</html>

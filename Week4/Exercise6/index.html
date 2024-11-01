@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form Validation</title>
+    <style>
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="form">
+      <label>Name:</label>
+      <input type="text" id="name" />
+      <span id="nameError" class="error"></span><br />
+
+      <label>Email:</label>
+      <input type="email" id="email" />
+      <span id="emailError" class="error"></span><br />
+
+      <button type="button" onclick="validateForm()">Submit</button>
+    </form>
+
+    <script>
+      function validateForm() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        let valid = true;
+
+        if (!name) {
+          document.getElementById("nameError").innerText = "Name is required";
+          valid = false;
+        } else {
+          document.getElementById("nameError").innerText = "";
+        }
+
+        if (!email.includes("@")) {
+          document.getElementById("emailError").innerText = "Invalid email";
+          valid = false;
+        } else {
+          document.getElementById("emailError").innerText = "";
+        }
+
+        return valid;
+      }
+    </script>
+  </body>
+</html>

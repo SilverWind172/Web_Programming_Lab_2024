@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GoTravel</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="wrapper">
+    <div id="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar-logo"><a href="#">GoTravel</a>
+                </div>
+                <div class="navbar-right">
+                    <ul class="navbar-links">
+                        <li class="link"><a href="#">Trang chủ</a></li>
+                        <li class="link"><a href="#">Khuyến mãi</a></li>
+                        <li class="link"><a href="#">Hỗ trợ</a></li>
+                        <li class="link"><a href="#">Đặt chỗ của tôi</a></li>
+                    </ul>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-login">Đăng nhập</button>
+                        <button type="button" class="btn btn-register">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Landscapes</h1>
+        <div class="filters">
+            <button>Date</button>
+            <button>Price Low to High</button>
+            <button>Price High to Low</button>
+            <button>Name (A-Z)</button>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Destination Cards -->
+        <div class="destinations">
+            <div class="card">
+                <h2>Book This Tour</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ConfirmEmail">Confirm Email:</label>
+                        <input type="email" id="ConfirmEmail" name="confirm_email" placeholder="Confirm Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ddmmyy">Ngày-Tháng-Năm:</label>
+                        <input type="date" id="ddmmyy" name="date" placeholder="dd-mm-yy" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tickets">Number of tickets:</label>
+                        <input type="number" id="tickets" name="tickets" min="1" placeholder="Enter the number of tickets" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit">Check Availability</button>
+                    <button type="button" onclick="bookNow()">Book Now</button>
+                </form>
+            </div>
+        </div>
+        <div class="tour-plan">
+            <h1>Tour Plan</h1>
+            <div class="day">
+                <h3>Day 1: Departure</h3>
+                <ul>
+                    <li>Quét Tempore Voluptate Qua Quo Commodi Rem Perspiciatis Alias Et Voluptate Officia Sed Voluptatum Sint Et Voluptatem Quos Qui Itrem Reprehenderit Dolium Delenit</li>
+                    <li>Hotel Accommodation</li>
+                    <li>Tour Guide</li>
+                    <li>Bike Accommodation</li>
+                    <li>Breakfast</li>
+                </ul>
+                <h3>Day 2: Departure</h3>
+                    <li>Quét Tempore Voluptate Qua Quo Commodi Rem Perspiciatis Alias Et Voluptate Officia Sed Voluptatum Sint Et Voluptatem Quos Qui Itrem Reprehenderit Dolium Delenit</li>
+                    <li>Hotel Accommodation</li>
+                    <li>Tour Guide</li>
+                    <li>Bike Accommodation</li>
+                    <li>Breakfast</li>
+
+                <h3>Day 3: Departure</h3>
+                    <li>Quét Tempore Voluptate Qua Quo Commodi Rem Perspiciatis Alias Et Voluptate Officia Sed Voluptatum Sint Et Voluptatem Quos Qui Itrem Reprehenderit Dolium Delenit</li>
+                    <li>Hotel Accommodation</li>
+                    <li>Tour Guide</li>
+                    <li>Bike Accommodation</li>
+                    <li>Breakfast</li>
+
+                <h3>Day 4: Departure</h3>
+                    <li>Quét Tempore Voluptate Qua Quo Commodi Rem Perspiciatis Alias Et Voluptate Officia Sed Voluptatum Sint Et Voluptatem Quos Qui Itrem Reprehenderit Dolium Delenit</li>
+                    <li>Hotel Accommodation</li>
+                    <li>Tour Guide</li>
+                    <li>Bike Accommodation</li>
+                    <li>Breakfast</li>
+
+                <h3>Day 5: Departure</h3>
+                    <li>Quét Tempore Voluptate Qua Quo Commodi Rem Perspiciatis Alias Et Voluptate Officia Sed Voluptatum Sint Et Voluptatem Quos Qui Itrem Reprehenderit Dolium Delenit</li>
+                    <li>Hotel Accommodation</li>
+                    <li>Tour Guide</li>
+                    <li>Bike Accommodation</li>
+                    <li>Breakfast</li>
+
+
+            </div>
+            <!-- Thêm các ngày khác ở đây -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div id="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <h3>GoTravel</h3>
+                        <p class="footer-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis,
+                            possimus.</p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-link">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">News & Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-link">
+                            <h3>Company</h3>
+                            <ul>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-link">
+                            <h3>Contact</h3>
+                            <ul>
+                                <li><a href="#">Call Center</a></li>
+                                <li><a href="#">Support Center</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-link">
+                            <h3>Support</h3>
+                            <ul>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Services</a></li>
+                                <li><a href="#">Payments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-credit">
+                    <p class="credit">&#169; 2024 GoTravel.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript code
+        function bookNow() {
+            // Implement your booking logic here
+            alert("Booking submitted!");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Random Greeting</title>
+  </head>
+  <body>
+    <h1 id="greeting"></h1>
+
+    <script>
+      const greetings = [
+        "Hello!",
+        "Welcome!",
+        "Hi there!",
+        "Good day!",
+        "Greetings!",
+        "Nice to meet you!"
+      ];
+      document.getElementById("greeting").innerText =
+        greetings[Math.floor(Math.random() * greetings.length)];
+    </script>
+  </body>
+</html>

@@ -1,0 +1,350 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #fafaff;
+    --white-color: #fff;
+    --black-color: #000;
+    --gray-color: #eee;
+    --max-width: 1200px;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+/*      apply background image for both header and hero section     */
+.bg-image {
+    background-image: url("https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: hsla(0, 0%, 0%, 0.6);
+    background-blend-mode: overlay;
+}
+
+/*      HEADER      */
+#header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#header .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.navbar {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-logo a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 1.5rem 1rem;
+    /*    mau cua logo */
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: auto;
+    flex-wrap: nowrap;
+}
+
+.navbar-links {
+    display: flex;
+    list-style-type: none;
+    font-weight: 500;
+    align-items: center;
+    gap: 2rem;
+}
+
+.link a {
+    text-decoration: none;
+    padding: 2rem 1rem;
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+.navbar .btn-group {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.navbar button {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+    width: auto;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.2rem;
+
+}
+
+.btn-login {
+    background-color: transparent;
+    color: var(--white-color);
+}
+
+.btn-register {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* Hero Section */
+.hero {
+    background-image: url("https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5");
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+
+}
+.hero h1 { font-size: 48px; margin-bottom: 20px; }
+.hero .filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.hero .filters button { padding: 10px 20px; }
+
+/* Main Content */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+    max-width: 1328px;
+    max-height: 1636px;
+    margin: 50px auto;
+    padding: 160px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: auto;
+}
+
+.tour-plan {
+    background-color: #f8f8f8;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 614px;
+    height: 1237px;
+    overflow-y: auto;
+}
+
+.tour-plan h2 {
+    margin-bottom: 20px;
+}
+
+.tour-plan .day {
+    margin-bottom: 30px;
+}
+
+.tour-plan .day h3 {
+    margin-bottom: 10px;
+}
+
+.tour-plan .day ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.tour-plan .day ul li {
+    margin-bottom: 5px;
+}
+
+.card {
+    background-color: #f8f8f8;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-self: end;
+    width: 481px;
+    height: 814px;
+}
+
+
+
+
+   /* Sidebar */
+
+    .sidebar {
+        width: 250px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar h2 {
+        margin-bottom: 20px;
+    }
+
+    .sidebar input, .sidebar button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .sidebar label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    /* Cards */
+
+
+    .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .card .price {
+        color: green;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+
+
+
+    .card h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    /* Form Styles */
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    .input::placeholder, textarea::placeholder {
+        color: #999;
+    }
+    button {
+        background-color: #ff5a5f;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    /* Footer */
+
+#footer {
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 60px 0 30px;
+}
+
+#footer .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.footer-logo {
+    max-width: 200px;
+    padding: 10px 0;
+}
+
+.footer-logo h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--white-color);
+}
+
+.footer-description {
+    font-size: 1rem;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-grow: 1;
+}
+
+.footer-link h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--white-color);
+}
+
+.footer-link ul {
+    list-style: none;
+}
+
+.footer-link ul li {
+    margin-bottom: 10px;
+}
+
+.footer-link ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-credit {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #000;
+    width: 100%;
+}
+
+.credit {
+    color: var(--white-color);
+    font-size: 1rem;
+}

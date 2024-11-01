@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dropdown Menu</title>
+    <style>
+        /* Basic menu styling */
+        .menu {
+            display: flex;
+            list-style-type: none;
+            background-color: #333;
+        }
+
+        .menu > li {
+            position: relative;
+        }
+
+        .menu > li > a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu > li > a:hover {
+            background-color: #555;
+        }
+
+        /* Submenu styling */
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .submenu li a {
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .submenu li a:hover {
+            background-color: #555;
+        }
+
+        /* Show submenu on hover */
+        .menu > li:hover .submenu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li>
+            <a href="#">About</a>
+            <ul class="submenu">
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Services</a>
+            <ul class="submenu">
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">SEO</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Count Occurrences</title>
+  </head>
+  <body>
+    <textarea id="paragraph" placeholder="Enter paragraph..."></textarea><br />
+    <input id="text" type="text" placeholder="Enter text to find" /><br />
+    <button onclick="countOccurrences()">Count</button>
+    <div id="countResult"></div>
+
+    <script>
+      function countOccurrences() {
+        let paragraph = document.getElementById("paragraph").value;
+        let text = document.getElementById("text").value;
+        let count = paragraph.split(text).length - 1;
+        document.getElementById(
+          "countResult"
+        ).innerText = `Occurrences: ${count}`;
+      }
+    </script>
+  </body>
+</html>
